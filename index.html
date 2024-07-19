@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Space Shooter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+</head>
+<body>
+    <audio id="background-music" src="music/background.mp3" loop></audio>
+    <audio id="intro-music" src="music/intro.mp3" autoplay loop></audio>
+    <div id="intro-page">
+        <h1>Space Shooter</h1>
+        <button id="start-button">Start Game</button>
+        <footer id="intro-footer">
+            <p>Created by: <a>Sankeerthini Dhandapani</a> 
+                | 
+                <a href="https://github.com/sankeerthini" target="_blank">
+                    <i class="fab fa-github fa-2x mx-2"></i>
+                </a>
+                <a href="https://www.linkedin.com/in/sankeerthini-d" target="_blank">
+                    <i class="fab fa-linkedin fa-2x mx-2"></i>
+                </a>
+            </p>
+        </footer>
+    </div>
+    <div id="game-container">
+        <canvas id="gameCanvas" width="800" height="600"></canvas>
+        <div id="hud">
+            <div id="score-timer">
+                <span id="score">Score: 0</span>
+                <span id="timer">Time: 0s</span>
+            </div>
+            <div id="pause-button-container">
+                <button id="pause-button">||</button> <!-- Pause button -->
+            </div>
+        </div>
+        <div id="game-over-modal" class="modal">
+            <div class="modal-content">
+                <p>Game Lost</p>
+                <button id="retry-button">Retry</button>
+                <button id="exit-button">Exit</button>
+            </div>
+        </div>
+        <div id="pause-modal" class="modal"> <!-- Pause modal -->
+            <div class="modal-content">
+                <p>Game Paused</p>
+                <button id="continue-button">Continue</button>
+                <button id="pause-exit-button">Exit</button>
+            </div>
+        </div>
+        <div id="countdown-timer" class="modal">
+            <p id="countdown-number"></p>
+        </div>
+        <div id="attack-message" class="attack-message">Attack</div>
+        <div id="dodge-message" class="attack-message" style="display: none;">Dodge</div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
