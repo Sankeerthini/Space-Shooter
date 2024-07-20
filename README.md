@@ -6,6 +6,8 @@ The **Space Shooter Game** is a web-based shooter game designed to demonstrate a
 
 [Live Demo](https://sankeerthini.github.io/Space-Shooter/)
 
+![Space Shooter Game](images/demo.png)
+
 ## Features
 
 - **Responsive Design**: Ensures compatibility across various devices and screen sizes.
