@@ -4,7 +4,7 @@
 
 The **Space Shooter Game** is a web-based shooter game designed to demonstrate advanced JavaScript programming, HTML5 Canvas, and CSS styling techniques. This project highlights the implementation of game logic, collision detection, and responsive design principles.
 
-[Live Demo](https://sankeerthini.github.io/space-shooter-game)
+[Live Demo](https://sankeerthini.github.io/Space-Shooter/)
 
 ## Features
 
